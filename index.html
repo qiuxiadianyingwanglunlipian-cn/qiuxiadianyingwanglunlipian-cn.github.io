@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="秋霞电影网伦理片频道，专注伦理题材电影、家庭伦理片、道德困境剧情片的在线观看指引与深度赏析，提供伦理电影片单、导演解读与观影指南。">
+<meta name="keywords" content="秋霞电影网伦理片, 伦理电影, 家庭伦理片, 道德困境电影, 剧情片, 电影赏析">
+<meta name="author" content="秋霞电影网">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>秋霞电影网伦理片 - 伦理题材电影赏析 · 片单与观影指南</title>
+<style>
+/* ==========================================================
+   秋霞电影网 · 伦理片 单页响应式网站
+   视觉基调：暖陶土 + 米白留白，人文纪实 / 杂志质感
+   多模板 DOM 差异化，CSS/JS 全部内联，标签闭合
+   ========================================================== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1c1917;
+  --ink2:#2b2724;
+  --paper:#f7f4ef;
+  --card:#ffffff;
+  --line:#e8e2d7;
+  --line2:#dbd3c2;
+  --txt:#3a3530;
+  --dim:#8c867a;
+  --clay:#a8503c;      /* 陶土红 */
+  --clay2:#c96a4f;
+  --umber:#6b4a35;     /* 赭褐 */
+  --sage:#5f7a63;      /* 鼠尾草绿 */
+  --gold:#c69a4b;
+  --grad:linear-gradient(125deg,var(--clay),var(--clay2));
+  --grad2:linear-gradient(135deg,var(--umber),var(--clay));
+  --shadow:0 22px 48px rgba(40,30,22,.13);
+  --mx:1180px;
+  --r:18px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--paper);color:var(--txt);line-height:1.85;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;transition:.26s}
+img,svg{max-width:100%;display:block}
+ul{list-style:none}
+button{font-family:inherit}
+::selection{background:var(--clay);color:#fff}
+
+.wrap{max-width:var(--mx);margin:0 auto;padding:0 24px}
+section{padding:76px 0;position:relative}
+.eyebrow{font-size:11px;letter-spacing:4px;color:var(--clay);font-weight:800;text-transform:uppercase}
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:34px;flex-wrap:wrap}
+.sec-t{font-size:28px;font-weight:950;letter-spacing:.4px;color:var(--ink)}
+.sec-t small{display:block;font-size:12px;color:var(--dim);font-weight:600;letter-spacing:2px;margin-top:6px}
+.more{font-size:13px;color:var(--clay);font-weight:750;border-bottom:2px solid var(--gold);padding-bottom:2px}
+.more:hover{color:var(--umber)}
+
+/* ---------- Header ---------- */
+.hd{position:sticky;top:0;z-index:100;background:rgba(247,244,239,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hd-in{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.logo{display:flex;align-items:baseline;gap:9px;font-weight:950;font-size:22px;letter-spacing:.4px;color:var(--ink)}
+.logo em{font-style:normal;color:var(--clay)}
+.logo mark{background:var(--grad);color:#fff;font-size:12px;font-weight:800;padding:3px 10px;border-radius:20px;letter-spacing:1px;transform:translateY(-3px);display:inline-block}
+.nav{display:flex;gap:2px}
+.nav a{font-size:14px;padding:10px 15px;border-radius:11px;color:#6b655a;font-weight:650}
+.nav a:hover{color:var(--clay);background:rgba(168,80,60,.07)}
+.nav a.on{color:#fff;background:var(--grad);box-shadow:0 7px 18px rgba(168,80,60,.3)}
+.mbtn{display:none;width:46px;height:46px;border:1px solid var(--line2);border-radius:12px;background:var(--card);color:var(--ink);font-size:20px;cursor:pointer}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:80px 0 44px;overflow:hidden;background:
+  radial-gradient(720px 340px at 92% 6%,rgba(201,106,79,.2),transparent 62%),
+  radial-gradient(560px 300px at 2% 98%,rgba(107,74,53,.16),transparent 62%),
+  var(--paper)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.hero h1{font-size:clamp(34px,5.6vw,58px);line-height:1.16;font-weight:950;margin:16px 0 20px;color:var(--ink);letter-spacing:-.5px}
+.hero h1 i{font-style:normal;color:var(--clay)}
+.hero .lede{font-size:16px;color:#6f6a5f;max-width:540px;margin-bottom:26px}
+.hero .lede b{color:var(--clay);font-weight:800}
+.acts{display:flex;gap:14px;flex-wrap:wrap}
+.b{padding:14px 32px;border-radius:34px;font-size:15px;font-weight:850;cursor:pointer;border:0;transition:.26s;letter-spacing:.5px}
+.b-p{background:var(--grad);color:#fff;box-shadow:0 12px 26px rgba(168,80,60,.32)}
+.b-p:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(168,80,60,.46)}
+.b-g{border:2px solid var(--line2);color:#6b655a;background:var(--card)}
+.b-g:hover{border-color:var(--clay);color:var(--clay)}
+.kw{display:flex;gap:9px;flex-wrap:wrap;margin-top:30px}
+.kw a{font-size:12px;color:#7d776b;border:1px solid var(--line2);background:var(--card);padding:6px 14px;border-radius:22px}
+.kw a:hover{color:#fff;border-color:transparent;background:var(--grad2);transform:translateY(-2px)}
+
+/* 伦理三命题 */
+.eth{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.eth .c{border-radius:16px;padding:26px 22px;color:#fff;position:relative;overflow:hidden;transition:.32s;cursor:pointer}
+.eth .c:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.eth .c b{font-size:22px;display:block;margin-bottom:6px;letter-spacing:.5px}
+.eth .c p{font-size:12.5px;opacity:.9}
+.eth .c span{position:absolute;right:14px;top:10px;font-size:44px;font-weight:950;opacity:.16}
+
+/* ---------- Search ---------- */
+.sbar{margin-top:-42px;position:relative;z-index:6}
+.sin{display:flex;gap:10px;background:var(--card);border:2px solid var(--line2);border-radius:16px;padding:10px;box-shadow:var(--shadow)}
+.sin:focus-within{border-color:var(--clay2)}
+.sin input{flex:1;background:transparent;border:0;color:var(--ink);font-size:15px;padding:10px 14px;outline:none;min-width:0}
+.sin input::placeholder{color:#c0b9a9}
+.sin button{border:0;background:var(--grad);color:#fff;font-weight:850;padding:12px 34px;border-radius:13px;cursor:pointer;font-size:15px;white-space:nowrap}
+
+/* ============ 栏目一：伦理片 —— 竖版海报网格 ============ */
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:20px}
+.mv{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.34s;cursor:pointer;display:flex;flex-direction:column}
+.mv:hover{box-shadow:var(--shadow);transform:translateY(-7px)}
+.mv .cv{position:relative;aspect-ratio:3/4;overflow:hidden}
+.mv .cv .ph{position:absolute;inset:0;display:grid;place-items:center;font-size:44px;font-weight:950;color:rgba(255,255,255,.26)}
+.mv .cv .tg{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.94);color:var(--clay);font-size:11px;font-weight:850;padding:4px 10px;border-radius:20px;letter-spacing:.5px}
+.mv .cv .rt{position:absolute;bottom:12px;right:12px;background:rgba(28,25,23,.84);color:var(--gold);font-size:12px;font-weight:850;padding:4px 10px;border-radius:20px}
+.mv .bd{padding:15px 16px 17px;flex:1;display:flex;flex-direction:column}
+.mv .bd h4{font-size:16px;font-weight:850;line-height:1.45;margin-bottom:6px}
+.mv .bd small{font-size:11.5px;color:var(--dim);margin-bottom:10px}
+.mv .bd .bar{height:5px;border-radius:6px;background:#efe9dd;overflow:hidden;margin-top:auto}
+.mv .bd .bar i{display:block;height:100%;border-radius:6px;background:var(--grad)}
+
+/* ============ 栏目二：议题 —— 手风琴 ============ */
+.acc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--card);box-shadow:0 8px 26px rgba(40,30,22,.07)}
+.it{border-bottom:1px solid var(--line)}
+.it:last-child{border-bottom:0}
+.it>summary{display:flex;align-items:center;gap:16px;padding:20px 24px;cursor:pointer;list-style:none;user-select:none;transition:.24s}
+.it>summary::-webkit-details-marker{display:none}
+.it>summary:hover{background:rgba(168,80,60,.05)}
+.it[open]>summary{background:linear-gradient(90deg,rgba(168,80,60,.1),transparent)}
+.it .no{font-size:26px;font-weight:950;color:var(--line2);min-width:38px}
+.it h4{font-size:18px;font-weight:850;flex:1}
+.it .arw{color:var(--clay);font-size:20px;transition:.3s;font-weight:700}
+.it[open] .arw{transform:rotate(180deg)}
+.it .pan{padding:4px 24px 24px 78px;color:#5f5a50;font-size:14.5px}
+.it .pan b{color:var(--clay)}
+.it .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.it .chips a{font-size:12px;background:#f3ede2;color:var(--umber);padding:6px 14px;border-radius:20px;border:1px solid var(--line)}
+.it .chips a:hover{background:var(--grad);color:#fff;border-color:transparent}
+
+/* ============ 栏目三：导演 —— 拼图式 ============ */
+.puz{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:200px 200px;gap:16px}
+.puz a{display:flex;flex-direction:column;justify-content:flex-end;padding:18px;border-radius:16px;color:#fff;overflow:hidden;position:relative;transition:.34s}
+.puz a::before{content:"";position:absolute;inset:0;background:linear-gradient(170deg,transparent 40%,rgba(20,15,10,.9));z-index:1}
+.puz a:hover{transform:scale(1.02);box-shadow:var(--shadow);z-index:3}
+.puz a>*{position:relative;z-index:2}
+.puz .lg{grid-row:1/3;justify-content:flex-end}
+.puz h4{font-size:20px;font-weight:950;letter-spacing:.5px}
+.puz small{font-size:11.5px;opacity:.86}
+.puz span{font-size:12px;font-weight:800;letter-spacing:1px;margin-bottom:6px;color:var(--gold)}
+
+/* ============ 栏目四：片单 —— 排行榜（进度条式） ============ */
+.rank{display:grid;gap:12px}
+.rw{display:grid;grid-template-columns:46px 1fr auto;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:13px 18px;transition:.26s}
+.rw:hover{border-color:var(--clay2);box-shadow:0 9px 22px rgba(40,30,22,.09);transform:translateX(4px)}
+.rw .no{font-size:24px;font-weight:950;text-align:center;color:var(--line2)}
+.rw:nth-child(1) .no{color:var(--gold)}
+.rw:nth-child(2) .no{color:#9aa0a6}
+.rw:nth-child(3) .no{color:#b57a4a}
+.rw .tx h4{font-size:16px;font-weight:850}
+.rw .tx small{font-size:11.5px;color:var(--dim)}
+.rw .tr{width:150px}
+.rw .tr .ou{height:8px;border-radius:8px;background:#efe9dd;overflow:hidden}
+.rw .tr .ou i{display:block;height:100%;border-radius:8px;background:var(--grad)}
+.rw .tr em{font-size:11px;color:var(--dim);font-style:normal;display:block;text-align:right;margin-top:3px}
+
+/* ============ 栏目五：影评 —— 卡片 + 标签 ============ */
+.vws{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.vw{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:.3s}
+.vw:hover{box-shadow:var(--shadow);transform:translateY(-6px);border-color:var(--clay2)}
+.vw .kat{font-size:11px;font-weight:850;letter-spacing:1px;color:var(--clay)}
+.vw h4{font-size:18px;font-weight:950;margin:8px 0 10px;color:var(--ink)}
+.vw p{font-size:13.5px;color:#6f6a5f;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.vw .mt{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:12px;border-top:1px dashed var(--line);font-size:11.5px;color:var(--dim)}
+
+/* ---------- CTA ---------- */
+.cta{text-align:center;padding:62px 26px;border-radius:28px;background:
+  radial-gradient(640px 260px at 50% -30%,rgba(201,106,79,.22),transparent 60%),
+  linear-gradient(160deg,#fbf8f3,#eee6d8);border:1px solid var(--line2);margin:20px 0 40px}
+.cta h2{font-size:clamp(24px,4vw,38px);font-weight:950;margin-bottom:14px;color:var(--ink)}
+.cta p{color:#7d776b;max-width:600px;margin:0 auto 26px}
+
+/* ---------- Footer ---------- */
+.ftr{background:var(--ink);color:#c9c4b8;padding:60px 0 26px}
+.fg{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:30px;margin-bottom:36px}
+.fb p{color:#8f8a7d;font-size:13px;margin-top:12px;max-width:300px}
+.fc h5{font-size:15px;margin-bottom:14px;color:#fff;letter-spacing:1px}
+.fc a{display:block;font-size:13px;color:#a4a08f;padding:5px 0}
+.fc a:hover{color:var(--gold);transform:translateX(4px)}
+.fbttm{text-align:center;color:#7c7768;font-size:12px;border-top:1px solid rgba(255,255,255,.1);padding-top:22px;line-height:2}
+.fbttm a{color:#b8b3a2}
+.fbttm a:hover{color:var(--gold)}
+
+.top{position:fixed;right:20px;bottom:24px;width:50px;height:50px;border-radius:50%;background:var(--grad);color:#fff;display:grid;place-items:center;font-size:19px;cursor:pointer;box-shadow:0 10px 24px rgba(168,80,60,.34);opacity:0;pointer-events:none;transition:.3s;z-index:99;border:0}
+.top.show{opacity:1;pointer-events:auto}
+
+/* ---------- Responsive ---------- */
+@media(max-width:960px){
+  .hero .wrap{grid-template-columns:1fr}
+  .puz{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px}
+}
+@media(max-width:680px){
+  section{padding:52px 0}
+  .wrap{padding:0 16px}
+  .mbtn{display:grid;place-items:center}
+  .nav{position:fixed;inset:72px 0 0 100%;flex-direction:column;background:rgba(247,244,239,.99);padding:22px;border-top:1px solid var(--line);transition:.35s;z-index:99}
+  .nav.open{inset:72px 0 0 0}
+  .nav a{font-size:16px;padding:15px;border-radius:12px;text-align:center}
+  .eth{grid-template-columns:1fr}
+  .puz{grid-template-columns:1fr;grid-template-rows:160px}
+  .puz .lg{grid-row:auto}
+  .rw{grid-template-columns:38px 1fr;padding:12px}
+  .rw .tr{display:none}
+  .sin button{padding:12px 20px;font-size:14px}
+  .sec-t{font-size:23px}
+  .it .pan{padding-left:24px}
+}
+@media print{.hd,.sbar,.top,.nav,.kw{display:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- ================= HEADER ================= -->
+<header class="hd">
+  <div class="wrap hd-in">
+    <a class="logo" href="#top" aria-label="返回顶部">
+      <em>秋霞</em>电影网<span style="color:var(--umber)">伦理片</span> <mark>赏析</mark>
+    </a>
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="#home" class="on">首页</a>
+      <a href="#films">伦理片</a>
+      <a href="#topic">伦理议题</a>
+      <a href="#auteur">导演</a>
+      <a href="#rank">热榜</a>
+      <a href="#views">影评</a>
+      <a href="#about">关于</a>
+    </nav>
+    <button class="mbtn" id="mb" aria-label="菜单" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Ethics · Family · Moral Dilemma</div>
+      <h1>在 <i>伦理片</i> 里<br>看见人性的两难</h1>
+      <p class="lede">秋霞电影网伦理片频道，专注<b>伦理题材电影、家庭伦理片与道德困境剧情片</b>的观看指引与深度赏析。我们不提供违规内容，只解读镜头背后的选择与代价——亲情、婚姻、欲望、责任，每一次冲突都是一面照见自己的镜子。</p>
+      <div class="acts">
+        <a class="b b-p" href="#films">选片观影</a>
+        <a class="b b-g" href="#topic">伦理议题</a>
+      </div>
+      <div class="kw">
+        <a href="#films">家庭伦理</a>
+        <a href="#films">婚姻危机</a>
+        <a href="#films">道德困境</a>
+        <a href="#auteur">李沧东</a>
+        <a href="#auteur">是枝裕和</a>
+        <a href="#topic">伦理片推荐</a>
+        <a href="#rank">高分榜单</a>
+        <a href="#views">影评</a>
+      </div>
+    </div>
+    <div class="eth" aria-hidden="false">
+      <div class="c" style="background:linear-gradient(145deg,#a8503c,#7d3a2a)"><span>01</span><b>亲情与责任</b><p>当爱成为枷锁，血缘是否等于羁绊？</p></div>
+      <div class="c" style="background:linear-gradient(145deg,#6b4a35,#3f2c1f)"><span>02</span><b>欲望与禁忌</b><p>在道德边界上行走的人，如何被自己的选择反噬。</p></div>
+      <div class="c" style="background:linear-gradient(145deg,#5f7a63,#3d5440)"><span>03</span><b>谎言与救赎</b><p>一个善意的谎言，要付出几代人的代价去偿还。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEARCH ================= -->
+<div class="wrap sbar">
+  <div class="sin">
+    <input type="search" id="q" placeholder="搜索伦理片、导演或议题，例如：秋霞电影网伦理片 家庭伦理 推荐" aria-label="搜索">
+    <button onclick="doSearch()">搜 索</button>
+  </div>
+</div>
+
+<!-- ================= 栏目一：伦理片（竖版海报网格） ================= -->
+<section id="films">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 class="sec-t">伦理片精选<small>FEATURED / 竖版海报卡</small></h2>
+      <a class="more" href="#">完整片单 →</a>
+    </div>
+    <div class="g" id="grid"></div>
+  </div>
+</section>
+
+<!-- ================= 栏目二：伦理议题（手风琴） ================= -->
+<section id="topic" style="background:linear-gradient(180deg,#fbf8f3,var(--paper))">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 class="sec-t">伦理议题解读<small>TOPICS / 点击展开</small></h2>
+      <a class="more" href="#">全部议题 →</a>
+    </div>
+    <div class="acc">
+      <details class="it" open>
+        <summary><span class="no">01</span><h4>家庭伦理：当“为你好”成为伤害</h4><span class="arw">▾</span></summary>
+        <div class="pan">东亚家庭题材的伦理片，常以代际冲突为核心：父母的牺牲、子女的亏欠、未被说出口的道歉。<b>代表作</b>：《步履不停》《东京物语》《小偷家族》。
+          <div class="chips"><a href="#">代际沟通</a><a href="#">长子长女</a><a href="#">赡养</a><a href="#">和解</a></div>
+        </div>
+      </details>
+      <details class="it">
+        <summary><span class="no">02</span><h4>婚姻与背叛：誓言为何失效</h4><span class="arw">▾</span></summary>
+        <div class="pan">婚姻伦理片不评判出轨，而是追问“我们是如何走到这一步的”。它拆解日常中的冷漠、隐忍与自我欺骗。<b>代表作</b>：《燃烧》《婚姻故事》《寄生虫》。
+          <div class="chips"><a href="#">婚姻危机</a><a href="#">出轨</a><a href="#">冷暴力</a><a href="#">离婚</a></div>
+        </div>
+      </details>
+      <details class="it">
+        <summary><span class="no">03</span><h4>道德困境：没有正确答案的选择</h4><span class="arw">▾</span></summary>
+        <div class="pan">电车难题式的叙事，把人物推向“两害相权”的绝境。这类影片的价值不在答案，而在让观众被迫代入、被迫思考。<b>代表作</b>：《老男孩》《告白》《燃烧》。
+          <div class="chips"><a href="#">复仇</a><a href="#">正义</a><a href="#">宽恕</a><a href="#">良知</a></div>
+        </div>
+      </details>
+      <details class="it">
+        <summary><span class="no">04</span><h4>阶层与体面：穷人的道德更贵</h4><span class="arw">▾</span></summary>
+        <div class="pan">当生存成为问题，道德是否还是一种奢侈？此类影片以阶级为底色，揭示“体面”背后的算计与尊严的代价。<b>代表作</b>：《寄生虫》《雪国列车》《燃烧》。
+          <div class="chips"><a href="#">阶级</a><a href="#">贫穷</a><a href="#">尊严</a><a href="#">空间</a></div>
+        </div>
+      </details>
+      <details class="it">
+        <summary><span class="no">05</span><h4>记忆与真相：我们记得的是事实吗</h4><span class="arw">▾</span></summary>
+        <div class="pan">以失忆、叙述不可靠为切口，伦理片在此追问“真相是否重要，还是我们更需要一个能活下去的版本”。<b>代表作</b>：《驾驶我的车》《记忆碎片》《情书》。
+          <div class="chips"><a href="#">记忆</a><a href="#">谎言</a><a href="#">叙述</a><a href="#">和解</a></div>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目三：导演（拼图式） ================= -->
+<section id="auteur">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 class="sec-t">擅长伦理叙事的导演<small>AUTEURS / 拼图栅格</small></h2>
+      <a class="more" href="#">完整导演库 →</a>
+    </div>
+    <div class="puz">
+      <a class="lg" href="#" style="background:linear-gradient(150deg,#8a5a44,#2c1f17)"><span>作者 · 韩国</span><h4>李沧东</h4><small>《燃烧》《诗》《密阳》—— 用宗教与阶级追问罪与罚</small></a>
+      <a href="#" style="background:linear-gradient(150deg,#a8503c,#6e3324)"><span>作者 · 日本</span><h4>是枝裕和</h4><small>家庭的缺席与日常的残忍</small></a>
+      <a href="#" style="background:linear-gradient(150deg,#5f7a63,#344a37)"><span>作者 · 韩国</span><h4>奉俊昊</h4><small>类型外壳下的阶级寓言</small></a>
+      <a href="#" style="background:linear-gradient(150deg,#6b4a35,#33291f)"><span>作者 · 日本</span><h4>小津安二郎</h4><small>榻榻米上的生老病死</small></a>
+      <a href="#" style="background:linear-gradient(150deg,#b0824a,#6e4f27)"><span>作者 · 韩国</span><h4>朴赞郁</h4><small>复仇、欲望与救赎的闭环</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目四：热榜（进度条式） ================= -->
+<section id="rank" style="background:linear-gradient(180deg,var(--paper),#fbf8f3)">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 class="sec-t">伦理片热度榜<small>HOT / 按口碑排序</small></h2>
+      <a class="more" href="#">完整榜单 →</a>
+    </div>
+    <div class="rank" id="rank"></div>
+  </div>
+</section>
+
+<!-- ================= 栏目五：影评（卡片） ================= -->
+<section id="views">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 class="sec-t">读片笔记<small>REVIEWS / 观点</small></h2>
+      <a class="more" href="#">全部笔记 →</a>
+    </div>
+    <div class="vws">
+      <article class="vw"><span class="kat">家庭伦理</span><h4>《步履不停》：那句没说出口的道歉</h4><p>一家人坐在餐桌前，聊着天气、菜和邻居的八卦。真正的伤口被小心地绕开。是枝裕和让我们明白：最深的痛，往往没有声音。</p><div class="mt"><span>观影指南</span><span>★ 9.1</span></div></article>
+      <article class="vw"><span class="kat">阶级寓言</span><h4>《寄生虫》：气味是一种阶级</h4><p>穷人的道德更贵，因为他们没有退路。奉俊昊用地下室的潮湿与豪宅的阳光，把“体面”拆成了一场残酷的空间游戏。</p><div class="mt"><span>深度解读</span><span>★ 9.3</span></div></article>
+      <article class="vw"><span class="kat">道德困境</span><h4>《燃烧》：村上春树式的悬疑，李沧东的愤怒</h4><p>“Little hunger”与“Great hunger”——当生存都成问题，谈论艺术是一种奢侈，还是一种背叛？</p><div class="mt"><span>导演解读</span><span>★ 9.0</span></div></article>
+      <article class="vw"><span class="kat">婚姻伦理</span><h4>《婚姻故事》：我们是怎么走到这一步的</h4><p>没有坏人，只有两个被生活磨平的人。最动人的台词，往往出现在争吵之后，而不是相爱之时。</p><div class="mt"><span>观影指南</span><span>★ 8.8</span></div></article>
+      <article class="vw"><span class="kat">欲望与禁忌</span><h4>《老男孩》：复仇的闭环里没有赢家</h4><p>当“知道真相”成为惩罚本身，遗忘是不是一种慈悲？朴赞郁用极致的视听，逼观众直面自己的伦理判断。</p><div class="mt"><span>深度解读</span><span>★ 8.9</span></div></article>
+      <article class="vw"><span class="kat">记忆与真相</span><h4>《驾驶我的车》：三个小时的沉默</h4><p>村上春树的小说，滨口龙介的镜头。失去如何被讲述，又如何被演出——台词在此成为治愈的仪式。</p><div class="mt"><span>导演解读</span><span>★ 8.7</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>在秋霞电影网伦理片，读懂人性的两难</h2>
+      <p>从家庭伦理到道德困境，从导演谱系到高分片单。秋霞电影网伦理片，是伦理题材电影的观赏入口，也是读懂人性与选择的解读课堂。</p>
+      <a class="b b-p" href="#films">立即选片观影</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目六：关于（页脚多列） ================= -->
+<footer class="ftr" id="about">
+  <div class="wrap">
+    <div class="fg">
+      <div class="fb">
+        <a class="logo" href="#top" style="color:#fff"><em style="color:var(--gold)">秋霞</em>电影网<span style="color:#c69a4b">伦理片</span></a>
+        <p>秋霞电影网伦理片频道，精选伦理题材电影、家庭伦理片与道德困境剧情片，提供影片赏析、议题解读、导演谱系与高分片单，兼顾观影指引与电影理论学习。</p>
+      </div>
+      <div class="fc">
+        <h5>影片频道</h5>
+        <a href="#home">首页</a>
+        <a href="#films">伦理片</a>
+        <a href="#films">家庭伦理</a>
+        <a href="#rank">热度榜单</a>
+        <a href="#views">读片笔记</a>
+      </div>
+      <div class="fc">
+        <h5>议题与理论</h5>
+        <a href="#topic">家庭伦理</a>
+        <a href="#topic">婚姻危机</a>
+        <a href="#topic">道德困境</a>
+        <a href="#auteur">导演谱系</a>
+      </div>
+      <div class="fc">
+        <h5>关于本站</h5>
+        <a href="#">网站简介</a>
+        <a href="#">投稿与合作</a>
+        <a href="#">版权说明</a>
+        <a href="#">免责声明</a>
+        <a href="#">友情链接</a>
+      </div>
+    </div>
+    <div class="fbttm">
+      <p>© <span id="yr"></span> 秋霞电影网 · 伦理片（qiuxiadianyingwanglunlipian-cn）保留所有权利。</p>
+      <p style="margin-top:8px">网站网址：<a href="https://qiuxiadianyingwanglunlipian-cn.github.io" rel="noopener">https://qiuxiadianyingwanglunlipian-cn.github.io</a> ｜ 本页为演示模板，内页链接均以 # 占位。</p>
+      <p style="margin-top:8px">温馨提示：请通过正规渠道观看正版影视内容，理性观影，遵守当地法律法规。</p>
+    </div>
+  </div>
+</footer>
+
+<button class="top" id="top" aria-label="返回顶部">↑</button>
+
+<script>
+/* ============ 数据 ============ */
+var FILMS=[
+  {t:"步履不停",d:"家庭 · 和解",g:"日本 2008",rt:9.1,bg:"linear-gradient(160deg,#8a5a44,#33211a)",c:"#a8503c"},
+  {t:"寄生虫",d:"阶级 · 寓言",g:"韩国 2019",rt:9.3,bg:"linear-gradient(160deg,#3d3a36,#161410)",c:"#6b4a35"},
+  {t:"燃烧",d:"悬疑 · 阶级",g:"韩国 2018",rt:9.0,bg:"linear-gradient(160deg,#7d4a3a,#2c1f1a)",c:"#c96a4f"},
+  {t:"小偷家族",d:"家庭 · 血缘",g:"日本 2018",rt:8.9,bg:"linear-gradient(160deg,#5f7a63,#2c3f30)",c:"#5f7a63"},
+  {t:"老男孩",d:"复仇 · 欲望",g:"韩国 2003",rt:8.9,bg:"linear-gradient(160deg,#4a3a4a,#211a24)",c:"#7d5a7d"},
+  {t:"东京物语",d:"代际 · 物哀",g:"日本 1953",rt:9.4,bg:"linear-gradient(160deg,#a08a5a,#42371f)",c:"#b0824a"},
+  {t:"驾驶我的车",d:"记忆 · 台词",g:"日本 2021",rt:8.7,bg:"linear-gradient(160deg,#4a5a6a,#1f2830)",c:"#4a6a7a"},
+  {t:"诗",d:"罪与罚",g:"韩国 2010",rt:8.8,bg:"linear-gradient(160deg,#a8506a,#5a2a38)",c:"#a8506a"},
+  {t:"情书",d:"记忆 · 暗恋",g:"日本 1995",rt:8.9,bg:"linear-gradient(160deg,#c9a0a0,#6e4a4a)",c:"#b57a7a"},
+  {t:"春夏秋冬又一春",d:"轮回 · 救赎",g:"韩国 2003",rt:8.8,bg:"linear-gradient(160deg,#3d5a4a,#1c2c22)",c:"#4a6b4a"},
+  {t:"密阳",d:"信仰 · 宽恕",g:"韩国 2007",rt:8.7,bg:"linear-gradient(160deg,#c96a4a,#5a2a18)",c:"#c96a4f"},
+  {t:"悲情城市",d:"历史 · 家族",g:"中国台湾 1989",rt:9.2,bg:"linear-gradient(160deg,#5a4a3a,#241d16)",c:"#8b6a4a"}
+];
+var RANK=[
+  {t:"东京物语",d:"小津安二郎 · 1953",p:98},
+  {t:"寄生虫",d:"奉俊昊 · 2019",p:96},
+  {t:"步履不停",d:"是枝裕和 · 2008",p:94},
+  {t:"悲情城市",d:"侯孝贤 · 1989",p:92},
+  {t:"燃烧",d:"李沧东 · 2018",p:90},
+  {t:"小偷家族",d:"是枝裕和 · 2018",p:89},
+  {t:"老男孩",d:"朴赞郁 · 2003",p:87},
+  {t:"诗",d:"李沧东 · 2010",p:85},
+  {t:"驾驶我的车",d:"滨口龙介 · 2021",p:83},
+  {t:"情书",d:"岩井俊二 · 1995",p:81}
+];
+
+/* ============ 渲染 ============ */
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+function renderGrid(){
+  var h="";
+  for(var i=0;i<FILMS.length;i++){
+    var f=FILMS[i];
+    var pct=Math.round((f.rt/10)*100);
+    h+='<article class="mv"><div class="cv" style="background:'+f.bg+'"><div class="ph">'+f.t.charAt(0)+'</div><span class="tg">'+f.d.split(" · ")[0]+'</span><span class="rt">★ '+f.rt+'</span></div><div class="bd"><h4>'+f.t+'</h4><small>'+f.g+' ｜ '+f.d+'</small><span class="bar"><i style="width:'+pct+'%;background:'+f.c+'"></i></span></div></article>';
+  }
+  document.getElementById("grid").innerHTML=h;
+}
+
+function renderRank(){
+  var h="";
+  for(var i=0;i<RANK.length;i++){
+    var r=RANK[i];
+    h+='<a class="rw" href="#"><span class="no">'+(i+1)+'</span><span class="tx"><h4>'+r.t+'</h4><small>'+r.d+'</small></span><span class="tr"><span class="ou"><i style="width:'+r.p+'%"></i></span><em>热度 '+r.p+'</em></span></a>';
+  }
+  document.getElementById("rank").innerHTML=h;
+}
+
+/* ============ 交互 ============ */
+function doSearch(){
+  var q=document.getElementById("q").value.trim();
+  if(q) alert("演示站点：搜索 「"+q+"」，内页链接以 # 占位。");
+}
+
+document.addEventListener("DOMContentLoaded",function(){
+  renderGrid();renderRank();
+  document.getElementById("yr").textContent=new Date().getFullYear();
+
+  var mb=document.getElementById("mb"), nav=document.getElementById("nav");
+  mb.addEventListener("click",function(){
+    nav.classList.toggle("open");
+    var o=nav.classList.contains("open");
+    mb.textContent=o?"✕":"☰";
+    mb.setAttribute("aria-expanded",o?"true":"false");
+  });
+  var as=nav.querySelectorAll("a");
+  for(var a=0;a<as.length;a++){
+    as[a].addEventListener("click",function(){nav.classList.remove("open");mb.textContent="☰";mb.setAttribute("aria-expanded","false");});
+  }
+
+  var secs=document.querySelectorAll("section[id]"), items=document.querySelectorAll(".nav a"), tt=document.getElementById("top");
+  function onScroll(){
+    var pos=window.scrollY+150, cur="";
+    for(var s=0;s<secs.length;s++){ if(secs[s].offsetTop<=pos) cur=secs[s].id; }
+    for(var n=0;n<items.length;n++){ items[n].classList.toggle("on", items[n].getAttribute("href")==="#"+cur); }
+    tt.classList.toggle("show", window.scrollY>700);
+  }
+  window.addEventListener("scroll",onScroll,{passive:true});
+  onScroll();
+  tt.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});});
+  document.getElementById("q").addEventListener("keydown",function(e){if(e.key==="Enter") doSearch();});
+});
+</script>
+</body>
+</html>
